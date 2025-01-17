@@ -1,18 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <!-- <TeacherForm/>
+  <h1>
+    Artículos
+  </h1>
+  <PostContainer/>
+  <CounterOption/>
+  <CounterComposition/>
+  <CounterSetup/>
+  <ExampleSelective/>
+  <ExampleFor/>
+  <ClassStyleBind/>
+  <ModelForm/> -->
+  <!-- <CycleOption/> -->
+   <PostList/>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
-
-export default defineComponent({
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-});
+<script lang="ts" setup>
+// import PostContainer from './components/PostContainer.vue';
+// import CounterOption from './components/CounterOption.vue';
+// import CounterComposition from './components/CounterComposition.vue';
+// import CounterSetup from './components/CounterSetup.vue';
+// import ExampleSelective from './components/ExampleSelective.vue';
+// import ExampleFor from './components/ExampleFor.vue';
+// import ClassStyleBind from './components/ClassStyleBind.vue';
+// import ModelForm from './components/ModelForm.vue';
+// import TeacherForm from './components/TeacherForm.vue';
+// import CycleOption from './components/CycleOption.vue';
+import PostList from './components/PostList.vue';
 </script>
 
 <style>
