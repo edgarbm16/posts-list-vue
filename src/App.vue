@@ -12,7 +12,8 @@
   <ClassStyleBind/>
   <ModelForm/> -->
   <!-- <CycleOption/> -->
-   <PostList/>
+   <!-- <PostList/> -->
+    <ComputedExample/>
 </template>
 
 <script lang="ts" setup>
@@ -26,7 +27,8 @@
 // import ModelForm from './components/ModelForm.vue';
 // import TeacherForm from './components/TeacherForm.vue';
 // import CycleOption from './components/CycleOption.vue';
-import PostList from './components/PostList.vue';
+// import PostList from './components/PostList.vue';
+import ComputedExample from './components/ComputedExample.vue';
 </script>
 
 <style>

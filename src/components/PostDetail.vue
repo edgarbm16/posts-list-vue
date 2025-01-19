@@ -7,34 +7,45 @@
             {{ props.content }}
         </p>
         <input type="text" v-model="message">
-        <button @click="handleClick">Hola</button>
+        <button @click="handleClick">Ejecutar</button>
     </div>
 </template>
 
-<script lang="ts">
-import { defineComponent, ref, Ref } from 'vue';
-export default defineComponent({
-    name: 'PostDetail',
-    props: {
-        title: {
-            type: String,
-            required: true,
-        },
-        content: {
-            type: String,
-            required: true,
-            default: 'No content provided',
-        }
-    },
-    emits: ["SayHi"],
-    setup(props, {emit}){
-        const handleClick = () => {
-            emit('SayHi', message.value)
-        }
-        let message:Ref<string> = ref("");
-        return{props, message, handleClick}
-    }
-})
+<script lang="ts" setup>
+import { defineProps, defineEmits, ref, Ref } from 'vue';
+
+const props = defineProps({
+    title: String,
+    content: String
+});
+
+const emit = defineEmits(['sayHi']);
+
+const handleClick = () => {
+    emit('sayHi', message.value)
+}
+
+let message:Ref<string> = ref("");
+
+// export default defineComponent({
+    // name: 'PostDetail',
+    // props: {
+    //     title: {
+    //         type: String,
+    //         required: true,
+    //     },
+    //     content: {
+    //         type: String,
+    //         required: true,
+    //         default: 'No content provided',
+    //     }
+    // },
+    // emits: ["sayHi"],
+    // setup(props, {emit}){
+
+        // return{props, message, handleClick}
+    // }
+// })
 </script>
 
 
