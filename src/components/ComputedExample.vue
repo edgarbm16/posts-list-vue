@@ -8,9 +8,11 @@
         <h3>
             {{  reverse }}
         </h3> -->
-        <label>Subtotal</label>
-        <input type="number" v-model="subtotal">
-        <h3>
+        <h1 v-custom-size-modify.xl.blue>Solicitud</h1>
+        <h2 v-custom-size-arg:2xl>Factura</h2>
+        <label v-font-size>Subtotal</label>
+        <input  v-font-size type="number" v-model="subtotal">
+        <h3 v-custom-size="90">
             Total Impuestos: {{ totalVat }} ({{  vat }}%)
         </h3>
     </div>
