@@ -10,10 +10,11 @@
   <ExampleSelective/>
   <ExampleFor/>
   <ClassStyleBind/>
-  <ModelForm/> -->
-  <!-- <CycleOption/> -->
-   <!-- <PostList/> -->
-    <ComputedExample/>
+  <ModelForm/>
+  <CycleOption/> 
+  <PostList/> 
+  <ComputedExample/> -->
+  <PostsList/>
 </template>
 
 <script lang="ts" setup>
@@ -28,7 +29,8 @@
 // import TeacherForm from './components/TeacherForm.vue';
 // import CycleOption from './components/CycleOption.vue';
 // import PostList from './components/PostList.vue';
-import ComputedExample from './components/ComputedExample.vue';
+// import ComputedExample from './components/ComputedExample.vue';
+import PostsList from './components/PostsList.vue';
 </script>
 
 <style>
