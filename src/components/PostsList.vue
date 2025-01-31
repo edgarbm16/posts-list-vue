@@ -1,8 +1,11 @@
 <template>
     <div>
-        <h1>
+        <h1 class="h1 lead initialism">
             Lista de Posts
         </h1>
+        <button class="btn btn-primary">
+            Bootstrap
+        </button>
         <ul>
             <!-- Usando setup normal -->
             <!-- <li v-for="post in posts" :key="post.id">
@@ -70,4 +73,8 @@
     });
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+    h1 {
+        color: $red;
+    }
+</style>
