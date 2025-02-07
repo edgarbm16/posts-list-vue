@@ -14,7 +14,8 @@
   <CycleOption/> 
   <PostList/> 
   <ComputedExample/> -->
-  <PostsList/>
+  <!-- <PostsList/> -->
+   <router-view />
 </template>
 
 <script lang="ts" setup>
@@ -30,7 +31,7 @@
 // import CycleOption from './components/CycleOption.vue';
 // import PostList from './components/PostList.vue';
 // import ComputedExample from './components/ComputedExample.vue';
-import PostsList from './components/PostsList.vue';
+// import PostsList from './components/PostsList.vue';
 </script>
 
 <style>

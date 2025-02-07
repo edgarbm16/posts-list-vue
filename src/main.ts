@@ -2,8 +2,9 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
+import router from './router'
 
-const app= createApp(App)
+const app = createApp(App)
 
 app.directive('font-size', {
     beforeMount: (el, binding) => {
@@ -64,4 +65,4 @@ app.directive('custom-size-modify', {
     }
 })
 
-app.mount('#app')
+app.use(router).mount('#app')
